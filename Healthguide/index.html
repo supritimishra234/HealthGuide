@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HealthGuide | Health Information</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container nav">
+
+            <div class="logo">
+                🩺 HealthGuide
+            </div>
+
+            <div class="nav-text">
+                Trusted Health Information
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+
+            <div class="container">
+
+                <h1>
+                    Understand Your Symptoms
+                </h1>
+
+                <p class="hero-description">
+                    Enter a symptom to find general health
+                    information from trusted sources.
+                </p>
+
+
+                <!-- SEARCH BOX -->
+
+                <div class="search-container">
+
+                    <input
+                        type="text"
+                        id="symptomInput"
+                        placeholder="Example: headache, cough, fever..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        id="searchButton"
+                        onclick="searchSymptoms()"
+                    >
+                        Search
+                    </button>
+
+                </div>
+
+                <p class="search-hint">
+                    Example: headache
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RESULTS ================= -->
+
+        <section class="results-section">
+
+            <div class="container">
+
+                <!-- Loading message -->
+
+                <div
+                    id="loading"
+                    class="loading hidden"
+                >
+                    Searching for health information...
+                </div>
+
+
+                <!-- Results will appear here -->
+
+                <div id="results"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EMERGENCY ================= -->
+
+        <section class="container">
+
+            <div class="emergency-box">
+
+                <div class="warning-icon">
+                    🚨
+                </div>
+
+                <div>
+
+                    <h2>
+                        Emergency Warning
+                    </h2>
+
+                    <p>
+                        If you are experiencing a medical emergency,
+                        severe symptoms, difficulty breathing, severe
+                        bleeding, loss of consciousness, or rapidly
+                        worsening symptoms, seek immediate medical
+                        attention.
+                    </p>
+
+                    <strong>
+                        Do not rely on HealthGuide for emergency
+                        medical decisions.
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DISCLAIMER ================= -->
+
+        <section class="container">
+
+            <div class="disclaimer-box">
+
+                <h2>
+                    ⚠️ Important Disclaimer
+                </h2>
+
+                <p>
+                    HealthGuide provides general educational and
+                    reference information only. It does not diagnose
+                    diseases, provide personalized treatment, or
+                    replace advice from a qualified healthcare
+                    professional.
+                </p>
+
+                <p>
+                    Always consult a doctor or qualified healthcare
+                    professional when you have concerns about your
+                    health.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 HealthGuide
+            </p>
+
+            <p>
+                General health information for educational purposes.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
